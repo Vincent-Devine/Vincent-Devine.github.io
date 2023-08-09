@@ -5,21 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Vincent DEVINE</title>
+  <title>Portfolio - Vincent DEVINE</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -27,8 +23,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Folio - v4.9.1
-  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Template Name: DevFolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -37,38 +34,37 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo"><img src="" alt="" class="img-fluid"></a> -->
-      <!-- Uncomment below if you prefer to use an text logo -->
       <h1 class="logo"><a href="index.html">Vincent DEVINE</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Me</a></li>
-          <li class="dropdown"><a class="nav-link  scrollto" href="#portfolio"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#work"><span>Project</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Engine</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="#work"><span>Engine</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="ArkEngine.html">ArkEngine</a></li>
-                  <li><a href="PotatOSEngine.html">PotatOSEngine</a></li>
-                  <li><a href="ModernOpenGL.html">Modern OpenGL</a></li>
-                  <li><a href="Rasterizer.html">Rasterizer</a></li>
+                  <li><a href="portfolio/potatos-engine.html">PotatOS Engine</a></li>
+                  <li><a href="portfolio/ark-engine.html">Ark Engine</a></li>
+                  <li><a href="portfolio/rasterizer.html">Rasterizer</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#"><span>Gameplay</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="#work"><span>Gameplay</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="RollerRushStreetShift.html">Roller Rush Street Shift</a></li>
-                  <li><a href="SaveThePresident.html">Save The President</a></li>
-                  <li><a href="akuTwins.html">Aku Twins</a></li>
+                  <li><a href="portfolio/roller-rush-street-shift.html">Roller Rush Street Shift</a></li>
+                  <li><a href="portfolio/sam-save-the-president.html">SAM Save The President</a></li>
+                  <li><a href="portfolio/aku-twins.html">Aku Twins</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li><a href="ResumeVincentDEVINE.pdf" target="_blank">Resume</a></li>
-
+          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+          <li><a class="nav-link scrollto " href="resume-vincent-devine.pdf">Resume</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -77,245 +73,416 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="home">
-
-    <div class="container">
-      <div class="hero-content">
-        <h1>Je suis <span class="typed" data-typed-items="Vincent Devine, développeur jeux vidéo"></span></h1>
-        <p>Étudiant en Game Programming</p>
-
-        <ul class="list-unstyled list-social">
-          <li><a href="https://www.linkedin.com/in/vincent-devine/"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="https://github.com/Vincent-Devine"><i class="bi bi-github"></i></a></li>
-          <li><a href="https://www.notion.so/Vincent-DEVINE-e640eb7946f74d2699b5df6d1cf90b91"><i class="bi bi-file-person"></i></a></li>
-        </ul>
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/home-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <p class="hero-subtitle">Hello there!</p>
+          <h1 class="hero-title mb-4">I'm Vincent DEVINE</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Gameplay developer, Engine developer, Software developer"></span></p>
+        </div>
       </div>
     </div>
-  </div><!-- End Hero -->
+  </div><!-- End Hero Section -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
+    <section id="about" class="about-mf sect-pt4 route">
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/vincent-devine.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <br>
+                        <br>
+                        <p><span class="title-s">Name: </span> <span>Vincent DEVINE</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Game Developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>vincentdevine.pro@gmail.com</span></p>
+                        <p><span class="title-s"><a href="https://github.com/Vincent-Devine"><i class="bi bi-github"></i><span> GitHub</span></a></span></p>
+                        <p><span class="title-s"><a href="https://www.linkedin.com/in/vincent-devine/"><i class="bi bi-linkedin"></i><span> Linkedin</span></a></span></p>
+                        <p><span class="title-s"><a href="resume-vincent-devine.pdf"><i class="bi bi-file-person"></i><span> Resume</span></a></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Hard Skill</p>
+                    <span class="title-s">Language: </span><span> C, C++, C#, GLSL, Pyhton, Bash, Java</span><br>
+                    <span class="title-s">Game engine: </span><span>Unity, Unreal Engine 4/5</span><br>
+                    <span class="title-s">Tools: </span><span>Visual Studio, Visual Studio Code, Android Studio, QT creator</span><br>
+                    <span class="title-s">Rendering: </span><span>OpenGL (Legacy and Modern), Raylib, Vulkan</span><br>
+                    <span class="title-s">Versionning: </span><span>Git (GitHub and GitLab), SVN (TortoiseSVN)</span><br>
+                    <span class="title-s">Programming concepts: </span><span>Prototyping, Multithreading, Scripting, Interfacing C++/Python, Animation Programming</span><br>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left"> About me </h5>
+                    </div>
+                    <p class="lead">
+                      I've always been intrigued by the inner workings and underlying logic of everyday things.
+                      It's with this mindset and the desire to learn more that I delved into programming, aiming to better comprehend the tool I use on a daily basis.
+                    </p>
+                    <p class="lead">
+                      Video game programming came later, during a school project or after observing my classmates play the games we had just created.
+                      Witnessing the joy, sadness, and excitement it brought forth deeply impacted me. It's this array of emotions that inspired me to bring all these sensations to a wider audience, all while doing what I love.
+                    </p>
 
-          <div class="col-lg-4 ">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="assets/img/VincentDevineProfil.jpg" class="img-responsive" alt="me">
+                    <p class="lead">
+                      Apart from programming, I have a strong interest in many other activities and I continuously strive to explore new experiences.
+                      However, the areas that captivate me the most are video games (FPS, RPG, and TPS), music (Rap, Pop, Metal, Electro), ancient Egypt (architecture, mythology), and reading (manga, comics, science fiction).
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-7">
-            <div class="about-descr">
-
-              <p class="p-heading">Bonjour ! Je suis Vincent DEVINE</p>
-              <p class="separator">
-                Développeur depuis 2018, Actuellement étudiant la programmation de jeux vidéo chez <a href="https://www.isart.fr/">Isart Digital</a>. <br><br>
-                Compétence <br>
-                <ul>
-                  <li>Language de programmation : C, C++, C#, GLSL, Python, Bash, Java</li>
-                  <li>Game Engine : Unity, Unreal Engine 4</li>
-                  <li>Tools : Visual Studio, Visual Studio Code, Android Studio, QT Creator</li>
-                  <li>Rendering : OpenGL (Legacy and Modern), Vulkan, Raylib</li>
-                  <li>Versioning : Git (GitHub and GitLab), SVN (TortoiseSVN)</li>
-                  <li>Programming Concepts : Prototyping, Multithreading, Scripting, Interfacing C++/Python</li>
-                </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a"> Soft Skill </h3>
+              <p class="subtitle-a">
+                Due to my professional and personal experiences, I have been able to acquire numerous skills such as
               </p>
-
+              <div class="line-mf"></div>
             </div>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Teamwork</h2>
+                <p class="s-description text-center">
+                  I have had numerous opportunities to collaborate 
+                  with individuals from diverse backgrounds, whose 
+                  skills greatly differ from mine.
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-kanban"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Managment</h2>
+                <p class="s-description text-center">
+                  It is something that I consider important and essential in my eyes, and that's why I don't mind dedicating time to it.<br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-send-check"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Communication</h2>
+                <p class="s-description text-center">
+                  On multiple occasions, I have had the opportunity to work for individuals with goals different from mine.<br>
+                  Communication has enabled each of us to better understand the challenges of the other.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <div id="services">
-      <div class="container">
-
-        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-braces"></i>
-                <span>Développeur</span>
-                <p class="separator">Moteur, Gameplay, logiciel et mobile.</p>
-              </div>
-            </div><!-- End testimonial item -->
-            
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-controller"></i>
-                <span>Joueur</span>
-                <p class="separator">J'ai commencé à jouer trés jeune pour pouvoir jouer avec mon père et ma soeur, cette passion ne s'est jamais arrêtée.</p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-triangle-half"></i>
-                <span>Egyptologie</span>
-                <p class="separator">
-                  Avant de devenir développeur, mon rêve était de devenir egyptologue.<br>
-                  J'ai toujours été fasciné par la vision qu'ils avaient sur le monde et l'univers, par leur architecture et leur mythologie.
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-            
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-music-note-beamed"></i>
-                <span>Musique</span>
-                <p class="separator">
-                  Fier de faire partie du top 5% des personnes en France écoutant le plus de musique sur Spotify.<br>
-                  J'écoute différents styles de musique. Tant que j'aime une musique, je l'ajoute dans une de mes playlists.<br>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-book"></i>
-                <span>Lecteur</span>
-                <p class="separator">
-                  Je lis principalement des romans graphiques tels que des mangas et des comics mais aussi des romans fantastiques, autobiographiques et livres historiques.
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </div><!-- End Services Section -->
+    </section><!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <div id="portfolio" class="paddsection">
-
+    <section id="work" class="portfolio-mf sect-pt4 route">
       <div class="container">
-        <div class="section-title text-center">
-          <h2>Mon Portfolio</h2>
-        </div>
-      </div>
-
-      <div class="container">
-
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-engine">Engine</li>
-              <li data-filter=".filter-gameplay">Gameplay</li>
-            </ul>
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a"> PROJECT </h3>
+              <div class="line-mf"></div>
+            </div>
           </div>
         </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-engine">
-            <img src="assets/img/portfolio/ArkEngine/ArkEngine.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>ArkEngine</h4>
-              <p>Moteur de jeu avec Vulkan pour des jeux FPS.</p>
-              <a href="ArkEngine.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio/potatos-engine.html">
+                <div class="work-img">
+                  <img src="assets/img/portfolio/PotatOS_Engine/PotatOS_Engine.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">PotatOS Engine</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Engine, OpenGL</span> / <span class="w-date">2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio/potatos-engine.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gameplay">
-            <img src="assets/img/portfolio/RollerRushStreetShift/rollerrushstreetshilft.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Roller Rush Street Shift</h4>
-              <p>Affrontez vos amis lors de courses effrénées jusqu'à 4 joueurs.</p>
-              <a href="RollerRushStreetShift.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio/sam-save-the-president.html">
+                <div class="work-img">
+                  <img src="assets/img/portfolio/SaveThePresident/SaveThePresident.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">SAM Save The President</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Gameplay, Unreal Engine, PS4</span> / <span class="w-date">2023</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio/sam-save-the-president.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gameplay">
-            <img src="assets/img/portfolio/SaveThePresident/SaveThePresident.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Save The President</h4>
-              <p>Vous incarnez SAM (Security Assistance Machine), le président a été kidnappé. Votre objectif: le secourir.</p>
-              <a href="SaveThePresident.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio/roller-rush-street-shift.html">
+                <div class="work-img">
+                  <img src="assets/img/portfolio/RollerRushStreetShift/rollerrushstreetshilft.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Roller Rush Street Shift</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Gameplay, Unity</span> / <span class="w-date">2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio/roller-rush-street-shift.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-engine">
-            <img src="assets/img/portfolio/Rasterizer/TriangleColored.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Rasterizer</h4>
-              <p>Le but du projet est de refaire la rasterization sur le CPU.</p>
-              <a href="Rasterizer.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio/ark-engine.html">
+                <div class="work-img">
+                  <img src="assets/img/portfolio/ark-engine/ark-engine.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Ark Engine</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Engine, Vulkan</span> / <span class="w-date">In progress</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio/ark-engine.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gameplay">
-            <img src="assets/img/portfolio/AkuTwins/AkuTwins.PNG" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Aku Twins</h4>
-              <p>Parcourez un monde vaste pour découvrir le mystère qui rôde.</p>
-              <a href="akuTwins.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio/aku-twins.html">
+                <div class="work-img">
+                  <img src="assets/img/portfolio/aku-twins/aku-twins.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Aku Twins</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Gameplay, Unity</span> / <span class="w-date">2021</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio/aku-twins.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-engine">
-            <img src="assets/img/portfolio/PotatOSEngine/PotatOSEngine.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>PotatOSEngine</h4>
-              <p>Réalisation d'un moteur de jeu, d'un Editeur et d'un jeu</p>
-              <a href="PotatOSEngine.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio/rasterizer.html">
+                <div class="work-img">
+                  <img src="assets/img/portfolio/Rasterizer/TriangleColored.png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Rasterizer</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Engine</span> / <span class="w-date">2021</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio/rasterizer.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
-
       </div>
+    </section><!-- End Portfolio Section -->
 
-    </div><!-- End Portfolio Section -->
-
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a"> Blog </h3>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog/skyrim-mods.html"><img src="assets/img/blog/skyrim-mods.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Game</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog/skyrim-mods.html">My fondness for Skyrim mods</a></h3>
+                <p class="card-description">
+                  In this article, you will discover my recommendations for Skyrim mods
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#about">
+                    <img src="assets/img/vincent-devine.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Vincent DEVINE</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-calendar3"></span> 08/08/2023
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div class="card-img">
+                <a href="blog/naraka.html"><img src="assets/img/blog/naraka.jpg" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Game</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog/naraka.html">My opinions on Naraka</a></h3>
+                <p class="card-description">
+                  Since the game transitioned to free-to-play, I've taken the time to test it, and here's my opinion
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#about">
+                    <img src="assets/img/vincent-devine.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">Vincent DEVINE</span>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-calendar3"></span> 08/08/2023
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
+  <footer>
     <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="https://www.linkedin.com/in/vincent-devine/"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="https://github.com/Vincent-Devine"><i class="bi bi-github"></i></a></li>
-          <li><a href="https://www.notion.so/Vincent-DEVINE-e640eb7946f74d2699b5df6d1cf90b91"><i class="bi bi-file-person"></i></a></li>
-        </ul>
-
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">
+              <a href="https://github.com/Vincent-Devine"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/vincent-devine/"><i class="bi bi-linkedin"></i></a>
+              <a href="resume-vincent-devine.pdf"><i class="bi bi-file-person"></i></a>
+            </p>
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
     </div>
-  </div><!-- End Footer -->
+  </footer><!-- End  Footer -->
 
+  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
